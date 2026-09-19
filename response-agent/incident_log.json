@@ -1,0 +1,1297 @@
+[
+  {
+    "timestamp": "2026-09-16T13:03:04.523512",
+    "record_id": 999,
+    "reason": "Test manual",
+    "protocol": "tcp",
+    "src_bytes": 0,
+    "status": "OPEN"
+  },
+  {
+    "timestamp": "2026-09-16T13:06:01.566302",
+    "record_id": 4,
+    "reason": "Skor anomali 0.74 menunjukkan tingkat risiko tinggi pada trafik ini, sehingga perlu segera eskalasi untuk investigasi lanjutan.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "timestamp": "2026-09-16T13:06:28.046993",
+    "record_id": 34,
+    "reason": "Skor anomali 0.74 menunjukkan risiko tinggi dan perlu ditangani segera oleh tim keamanan.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "timestamp": "2026-09-16T13:06:32.878661",
+    "record_id": 35,
+    "reason": "Skor anomali 0.77 menunjukkan tingkat kecurigaan tinggi sehingga perlu penanganan segera.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "timestamp": "2026-09-16T15:01:28.892079",
+    "record_id": 555,
+    "reason": "Test auto-refresh",
+    "protocol": "tcp",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "timestamp": "2026-09-16T16:14:10.994759",
+    "record_id": 33748,
+    "reason": "Skor tinggi 0.90 menandakan kemungkinan serangan serius walaupun ukuran data nol, sehingga perlu eskalasi segera.",
+    "protocol": "tcp",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "timestamp": "2026-09-17T14:17:38.223874",
+    "record_id": 91548,
+    "reason": "Anomaly score 0.74 with zero src_bytes on TCP suggests a potentially malicious idle connection or port\u2011scan activity. No historical incident data is available to trigger escalation.",
+    "protocol": "tcp",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "timestamp": "2026-09-17T14:17:48.918208",
+    "record_id": 53535,
+    "reason": "Skor anomali 0,82 pada protokol UDP dengan src_bytes 0 menunjukkan aktivitas mencurigakan tinggi. Mengingat tingkat skor tersebut dan potensi risiko, saya merekomendasikan eskalasi ke tim keamanan.",
+    "protocol": "udp",
+    "src_bytes": 0,
+    "status": "RESOLVED"
+  },
+  {
+    "record_id": 40619,
+    "reason": "Skor anomaly tinggi (0.81) dan model menandai traffic sebagai mencurigakan, namun data protokol dan src_bytes tidak tersedia sehingga tidak dapat melakukan analisis lanjutan seperti cek baseline atau riwayat insiden. Saya memanggil `check_active_incident_count` untuk menilai apakah sistem sedang mengalami serangan besar, sehingga data ini dapat dicatat untuk investigasi lebih lanjut.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:01:14.880069"
+  },
+  {
+    "record_id": 86806,
+    "reason": "Anomaly score 0.79 is high but protocol and src_bytes data are missing, preventing a deeper protocol\u2011specific analysis. The system currently has 2 active incidents, indicating a potential broader attack, so we log the event for further review rather than escalating immediately. Tools considered: check_active_incident_count.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [
+      "check_active_incident_count"
+    ],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:06:34.534244"
+  },
+  {
+    "record_id": 4,
+    "reason": "Skor anomaly tinggi (0.74) dan tidak ada data (src_bytes = 0) mengindikasikan potensi serangan.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:10:07.954118"
+  },
+  {
+    "record_id": 120354,
+    "reason": "Anomali score tinggi (0.82) namun tidak ada data protokol maupun ukuran src_bytes sehingga tidak dapat dibandingkan dengan histori insiden atau baseline. Tool `check_active_incident_count` dipertimbangkan untuk menilai apakah sistem sedang mengalami serangan massal; karena data terbatas, langkah yang aman adalah mencatat log untuk analisis lebih lanjut.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:14:30.285944"
+  },
+  {
+    "record_id": 111431,
+    "reason": "Skor anomali 0.74 menunjukkan risiko tinggi, sedangkan protokol dan ukuran data tidak tersedia sehingga analisis lebih lanjut memerlukan perhatian segera.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:15:48.766101"
+  },
+  {
+    "record_id": 34,
+    "reason": "Skor anomali tinggi (0.74) dan tidak ada data sumber (src_bytes = 0) menunjukkan kemungkinan serangan tersembunyi, sehingga perlu ditindaklanjuti oleh tim keamanan.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:15:50.196565"
+  },
+  {
+    "record_id": 35,
+    "reason": "Traffic dengan skor anomali 0.77 dan src_bytes 0 menunjukkan pola tidak biasa (normal traffic tidak menghasilkan 0 bytes). Untuk memastikan tidak ada kebiasaan historis yang serupa dan menilai risiko keseluruhan, saya akan memanggil semua tools berikut:",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T16:15:54.387342"
+  },
+  {
+    "record_id": 3354,
+    "reason": "Skor anomali (0.77) menunjukkan potensi risiko, namun protokol dan ukuran src_bytes tidak tersedia sehingga tidak dapat memverifikasi pola historis atau baseline. Mengingat sistem saat ini memiliki 8 insiden aktif, kondisi \u201cunder attack\u201d mungkin sedang terjadi. Oleh karena itu, data ini direkam untuk analisis lebih lanjut (LOG_ONLY). Tools yang dipertimbangkan: check_active_incident_count (hasil 8).",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [
+      "check_active_incident_count"
+    ],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T20:21:46.862460"
+  },
+  {
+    "record_id": 40619,
+    "reason": "Anomaly score (0.81) is high but key fields (protocol, src_bytes) are missing, preventing precise risk assessment. Checked overall active incident count with `check_active_incident_count` to gauge system load; no protocol\u2011specific history could be retrieved due to undefined protocol. Log for manual review.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T20:53:16.363420"
+  },
+  {
+    "record_id": 40619,
+    "reason": "Skor anomali tinggi (0.81) dan data protokol/ukuran tidak tersedia membuat evaluasi otomatis sulit. Menggunakan *check_active_incident_count* dapat mengidentifikasi apakah sistem sedang mengalami serangan berskala besar; bila tidak, masih disarankan eskalasi ke tim SOC. (Tools yang dipertimbangkan: check_active_incident_count)",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T20:58:10.051520"
+  },
+  {
+    "record_id": 86806,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.79 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:00:28.388938"
+  },
+  {
+    "record_id": 40619,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:00:47.217615"
+  },
+  {
+    "record_id": 86806,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.79 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:03:21.496333"
+  },
+  {
+    "record_id": 120354,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.82 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:05:02.635292"
+  },
+  {
+    "record_id": 111431,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:05:04.680177"
+  },
+  {
+    "record_id": 3354,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:05:18.714867"
+  },
+  {
+    "record_id": 121629,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:05:25.036962"
+  },
+  {
+    "record_id": 124812,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:05:43.615391"
+  },
+  {
+    "record_id": 28205,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:07:00.194521"
+  },
+  {
+    "record_id": 64399,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:07:49.820955"
+  },
+  {
+    "record_id": 92490,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:08:08.829867"
+  },
+  {
+    "record_id": 26018,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:08:15.175594"
+  },
+  {
+    "record_id": 37517,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:09:16.675618"
+  },
+  {
+    "record_id": 50534,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:10:53.606705"
+  },
+  {
+    "record_id": 105965,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:12:41.976812"
+  },
+  {
+    "record_id": 15282,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:13:01.199642"
+  },
+  {
+    "record_id": 76534,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:13:11.600381"
+  },
+  {
+    "record_id": 86397,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:14:23.008286"
+  },
+  {
+    "record_id": 103238,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.75 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:14:28.254549"
+  },
+  {
+    "record_id": 115010,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:14:30.294088"
+  },
+  {
+    "record_id": 117710,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:15:20.397507"
+  },
+  {
+    "record_id": 4345,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:16:35.968352"
+  },
+  {
+    "record_id": 81619,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:16:50.119820"
+  },
+  {
+    "record_id": 32845,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:18:04.655712"
+  },
+  {
+    "record_id": 8424,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:18:10.708514"
+  },
+  {
+    "record_id": 40619,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:19:04.618387"
+  },
+  {
+    "record_id": 86806,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.79 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:20:43.412304"
+  },
+  {
+    "record_id": 120354,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.82 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:22:20.178509"
+  },
+  {
+    "record_id": 111431,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:22:28.824849"
+  },
+  {
+    "record_id": 3354,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:23:50.165868"
+  },
+  {
+    "record_id": 121629,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:23:51.599767"
+  },
+  {
+    "record_id": 124812,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:23:54.824252"
+  },
+  {
+    "record_id": 28205,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:24:10.112840"
+  },
+  {
+    "record_id": 64399,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:25:24.783054"
+  },
+  {
+    "record_id": 92490,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:25:43.793328"
+  },
+  {
+    "record_id": 26018,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:26:35.874763"
+  },
+  {
+    "record_id": 37517,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:26:38.563934"
+  },
+  {
+    "record_id": 26018,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:27:26.883192"
+  },
+  {
+    "record_id": 50534,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:29:26.495628"
+  },
+  {
+    "record_id": 105965,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:29:32.970930"
+  },
+  {
+    "record_id": 15282,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:30:35.845013"
+  },
+  {
+    "record_id": 76534,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:31:33.966358"
+  },
+  {
+    "record_id": 86397,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:31:44.892548"
+  },
+  {
+    "record_id": 103238,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.75 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:31:51.271344"
+  },
+  {
+    "record_id": 115010,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:31:54.041565"
+  },
+  {
+    "record_id": 117710,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:32:58.510952"
+  },
+  {
+    "record_id": 4345,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:34:40.989583"
+  },
+  {
+    "record_id": 81619,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:34:51.412325"
+  },
+  {
+    "record_id": 32845,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:35:34.565687"
+  },
+  {
+    "record_id": 8424,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-B ",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:35:58.264215"
+  },
+  {
+    "record_id": 71841,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:37:44.368588"
+  },
+  {
+    "record_id": 15696,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.87 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:37:50.675511"
+  },
+  {
+    "record_id": 107951,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-16732",
+    "status": "OPEN",
+    "timestamp": "2026-09-17T21:37:59.237434"
+  },
+  {
+    "record_id": 32609,
+    "reason": "Anomaly score (0.73) is high, but protocol and src_bytes are missing, so I cannot query incident history, active incident count, or baseline traffic. Therefore I will log the event for further investigation.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:03:41.456214"
+  },
+  {
+    "record_id": 40619,
+    "reason": "Skor anomali 0.81 sangat tinggi dan data penting (protokol, src_bytes) tidak tersedia, menimbulkan ketidakpastian apakah ini serangan atau kesalahan deteksi. Menilai kondisi sistem melalui `check_active_incident_count` akan membantu menentukan apakah ini bagian dari serangan terkoordinasi. Karena risiko tinggi, lebih aman untuk eskalasi.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:03:49.442181"
+  },
+  {
+    "record_id": 4,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "sync-live-demo",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:02.255528"
+  },
+  {
+    "record_id": 40619,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:03.029724"
+  },
+  {
+    "record_id": 34,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "sync-live-demo",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:12.081415"
+  },
+  {
+    "record_id": 35,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "sync-live-demo",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:12.384984"
+  },
+  {
+    "record_id": 40619,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:20.370568"
+  },
+  {
+    "record_id": 86806,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.79 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:36.241247"
+  },
+  {
+    "record_id": 120354,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.82 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:49.350071"
+  },
+  {
+    "record_id": 111431,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:50.846564"
+  },
+  {
+    "record_id": 3354,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:54.774510"
+  },
+  {
+    "record_id": 121629,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:55.974659"
+  },
+  {
+    "record_id": 124812,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:04:58.627446"
+  },
+  {
+    "record_id": 28205,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:05.437531"
+  },
+  {
+    "record_id": 64399,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.81 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:16.445731"
+  },
+  {
+    "record_id": 92490,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:19.535250"
+  },
+  {
+    "record_id": 26018,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:20.381804"
+  },
+  {
+    "record_id": 37517,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:22.103896"
+  },
+  {
+    "record_id": 50534,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:43.009061"
+  },
+  {
+    "record_id": 105965,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-9084",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:49.663691"
+  },
+  {
+    "record_id": 15282,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:58.162616"
+  },
+  {
+    "record_id": 76534,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:05:59.374186"
+  },
+  {
+    "record_id": 86397,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:06:01.868405"
+  },
+  {
+    "record_id": 103238,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.75 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:06:03.908146"
+  },
+  {
+    "record_id": 115010,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:06:04.720375"
+  },
+  {
+    "record_id": 117710,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:06:15.266907"
+  },
+  {
+    "record_id": 4345,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:06:20.387533"
+  },
+  {
+    "record_id": 81619,
+    "reason": "Skor anomali tinggi (0.74) meskipun detail protokol dan ukuran data tidak tersedia, sehingga perlu peninjauan lebih lanjut.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:07:20.366243"
+  },
+  {
+    "record_id": 32845,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:07:59.282351"
+  },
+  {
+    "record_id": 8424,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:08:12.188830"
+  },
+  {
+    "record_id": 71841,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:08:32.043220"
+  },
+  {
+    "record_id": 15696,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.87 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:08:39.026099"
+  },
+  {
+    "record_id": 107951,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-6564",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:08:52.355913"
+  },
+  {
+    "record_id": 32609,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-25360",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:11:03.231680"
+  },
+  {
+    "record_id": 43925,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-21568",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:08.973638"
+  },
+  {
+    "record_id": 26227,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-21568",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:18.861781"
+  },
+  {
+    "record_id": 49340,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.88 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": null,
+    "src_bytes": null,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-21568",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:19.107816"
+  },
+  {
+    "record_id": 4,
+    "reason": "LLM tidak dapat dihubungi, skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:34.086459"
+  },
+  {
+    "record_id": 34,
+    "reason": "LLM sedang dalam cooldown rate limit (275s lagi), skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:36.775148"
+  },
+  {
+    "record_id": 35,
+    "reason": "LLM sedang dalam cooldown rate limit (274s lagi), skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:36.907736"
+  },
+  {
+    "record_id": 64,
+    "reason": "LLM sedang dalam cooldown rate limit (266s lagi), skor anomali 0.83 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:39.168099"
+  },
+  {
+    "record_id": 66,
+    "reason": "LLM sedang dalam cooldown rate limit (266s lagi), skor anomali 0.82 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:39.312623"
+  },
+  {
+    "record_id": 87,
+    "reason": "LLM sedang dalam cooldown rate limit (259s lagi), skor anomali 0.79 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:40.746574"
+  },
+  {
+    "record_id": 98,
+    "reason": "LLM sedang dalam cooldown rate limit (257s lagi), skor anomali 0.76 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:41.263149"
+  },
+  {
+    "record_id": 100,
+    "reason": "LLM sedang dalam cooldown rate limit (254s lagi), skor anomali 0.87 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:41.537575"
+  },
+  {
+    "record_id": 122,
+    "reason": "LLM sedang dalam cooldown rate limit (248s lagi), skor anomali 0.71 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:43.343942"
+  },
+  {
+    "record_id": 138,
+    "reason": "LLM sedang dalam cooldown rate limit (244s lagi), skor anomali 0.76 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:44.769811"
+  },
+  {
+    "record_id": 152,
+    "reason": "LLM sedang dalam cooldown rate limit (241s lagi), skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "0.0",
+    "src_bytes": 1480,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:46.009327"
+  },
+  {
+    "record_id": 162,
+    "reason": "LLM sedang dalam cooldown rate limit (237s lagi), skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:46.987409"
+  },
+  {
+    "record_id": 176,
+    "reason": "LLM sedang dalam cooldown rate limit (224s lagi), skor anomali 0.73 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:48.544380"
+  },
+  {
+    "record_id": 177,
+    "reason": "LLM sedang dalam cooldown rate limit (223s lagi), skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:48.702644"
+  },
+  {
+    "record_id": 205,
+    "reason": "LLM sedang dalam cooldown rate limit (215s lagi), skor anomali 0.78 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:52.889073"
+  },
+  {
+    "record_id": 210,
+    "reason": "LLM sedang dalam cooldown rate limit (213s lagi), skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 72564,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:54.032903"
+  },
+  {
+    "record_id": 242,
+    "reason": "LLM sedang dalam cooldown rate limit (204s lagi), skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:56.891766"
+  },
+  {
+    "record_id": 255,
+    "reason": "LLM sedang dalam cooldown rate limit (200s lagi), skor anomali 0.83 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:58.264254"
+  },
+  {
+    "record_id": 256,
+    "reason": "LLM sedang dalam cooldown rate limit (200s lagi), skor anomali 0.70 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:22:58.388507"
+  },
+  {
+    "record_id": 296,
+    "reason": "LLM sedang dalam cooldown rate limit (187s lagi), skor anomali 0.72 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:23:01.908022"
+  },
+  {
+    "record_id": 306,
+    "reason": "LLM sedang dalam cooldown rate limit (184s lagi), skor anomali 0.79 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:23:03.004671"
+  },
+  {
+    "record_id": 310,
+    "reason": "LLM sedang dalam cooldown rate limit (183s lagi), skor anomali 0.83 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:23:03.630091"
+  },
+  {
+    "record_id": 328,
+    "reason": "LLM sedang dalam cooldown rate limit (179s lagi), skor anomali 0.76 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "agent2-Immanuel-PC-3228",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T09:23:04.932271"
+  },
+  {
+    "record_id": 4,
+    "reason": "Anomaly score 0.74 dengan protokol 1.0 (kemungkinan TCP) dan src_bytes = 0 menunjukkan traffic tidak biasa yang berpotensi serangan. Saya memanggil **check_traffic_baseline** untuk menilai apakah nilai src_bytes ini jauh dari rata\u2011rata historis, serta **check_incident_history** guna mengetahui apakah serangan serupa telah terjadi sebelumnya pada protokol ini. Jika baseline menunjukkan deviasi signifikan dan sejarah menunjukkan insiden, tindakan eskalasi diperlukan.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "sync-live-demo",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T10:08:18.980205"
+  },
+  {
+    "record_id": 34,
+    "reason": "LLM sedang dalam cooldown rate limit (379s lagi), skor anomali 0.74 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "sync-live-demo",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T10:08:24.616715"
+  },
+  {
+    "record_id": 35,
+    "reason": "LLM sedang dalam cooldown rate limit (379s lagi), skor anomali 0.77 melewati ambang batas sehingga dieskalasi sebagai tindakan aman.",
+    "protocol": "1.0",
+    "src_bytes": 0,
+    "tools_called": [],
+    "processed_by": "sync-live-demo",
+    "status": "OPEN",
+    "timestamp": "2026-09-18T10:08:24.635061"
+  }
+]
